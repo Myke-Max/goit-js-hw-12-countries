@@ -2,7 +2,8 @@ const BASE_URL = 'https://restcountries.eu/rest/v2'
 function fetchCountryByName(name) {
      
 return  fetch(`${BASE_URL}/name/${name}`)
-    .then(response => response.json())
+        .then(response => response.json())
+        .catch(console.error)
 }
 
 export default {fetchCountryByName}
