@@ -20,15 +20,9 @@ notice({
 const refs = {
     countryCards: document.querySelector('.country'),
     searchForm: document.querySelector('.search-form'),
-    searchInput: document.querySelector('.search-input'),
 }
 refs.searchForm.addEventListener('input', debounce(onSearch, 500))
-refs.searchInput.addEventListener.keypress(function(e) {
-  //Enter key
-  if (e.code == 13) {
-    return false;
-  }
-});
+
 function onSearch(e) {
 
     e.preventDefault();
