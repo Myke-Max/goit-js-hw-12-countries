@@ -75,14 +75,5 @@ function renderCountry(country) {
         return
     }
     
-        
-
-    // else if (country.length === 0) {
-    //     refs.countryCards.innerHTML = ''
-    //     error({
-    //         text: "too many matches please specify your request"
-    //     })
-    // }
-    
     }
         
