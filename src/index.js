@@ -9,7 +9,7 @@ import { defaults } from '@pnotify/core';
 import { notice, info, success, error } from '@pnotify/core';
 defaults.delay = 3000;
 defaults.remove = true;
-defaults.mouseReset = true;
+defaults.mouseReset = false;
 
 
 
@@ -25,7 +25,8 @@ refs.searchInput.addEventListener('input', debounce(onSearch, 500))
 
 
 function onSearch(e) {
-
+ if (!e.target.value) return;
+  
     e.preventDefault();
     const searchQuery = e.target.value.trim()
 
